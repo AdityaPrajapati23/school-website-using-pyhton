@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from flask import Flask, render_template, request, redirect, session
 import sqlite3
 
@@ -340,7 +340,7 @@ def chatbot():
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
-=======
+
 from flask import Flask, render_template, request, redirect, session
 import sqlite3
 
@@ -681,4 +681,4 @@ def chatbot():
     return reply
 if __name__ == '__main__':
     app.run(debug=True)
->>>>>>> 787dd367c657a4b2ee84f2d01e270a7c27ede54b
+
