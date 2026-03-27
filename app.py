@@ -25,13 +25,7 @@ mail = Mail(app)
 # ---------------- HOME ----------------
 @app.route('/')
 def home():
-    conn = sqlite3.connect('database.db')
-    cursor = conn.cursor()
-    cursor.execute("SELECT notice FROM notices")
-    notices = cursor.fetchall()
-    conn.close()
-    return render_template('index.html', notices=notices)
-
+    return redirect('/login')
 # ---------------- LOGIN ----------------
 @app.route('/login', methods=['GET', 'POST'])
 def login():
