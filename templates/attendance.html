@@ -1,0 +1,15 @@
+<h2>Mark Attendance</h2>
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+
+<form action="/mark_attendance" method="POST">
+    Student ID: <input type="text" name="student_id"><br>
+    Date: <input type="date" name="date"><br>
+    Status:
+    <select name="status">
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+    </select><br>
+    <button type="submit">Submit</button>
+</form>

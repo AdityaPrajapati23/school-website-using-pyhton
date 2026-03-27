@@ -1,0 +1,15 @@
+<h2>Fees Management</h2>
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+
+<form action="/add_fees" method="POST">
+    Student ID: <input type="text" name="student_id"><br>
+    Amount: <input type="text" name="amount"><br>
+    Status:
+    <select name="status">
+        <option value="Paid">Paid</option>
+        <option value="Pending">Pending</option>
+    </select><br>
+    <button type="submit">Submit</button>
+</form>

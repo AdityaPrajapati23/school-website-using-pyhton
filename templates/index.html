@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My School Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FIRST CRY CONVENT SCHOOL</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/admission">Admission</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <button onclick="toggleDark()">🌙</button>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to First Cry</h1>
+            <p>Smart School </p>
+            <a href="/admission"><button>Apply for Admission</button></a>
+            
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <h2>Our Facilities</h2>
+        <div class="cards">
+            <div class="card">Library</div>
+            <div class="card">Computer Lab</div>
+            <div class="card">Sports</div>
+            <div class="card">Science Lab</div>
+        </div>
+    </section>
+
+    <!-- Notice Board -->
+    <section class="notice">
+        <h2>Latest Notices</h2>
+
+        {% for notice in notices %}
+            <p>{{ notice[0] }}</p>
+        {% endfor %}
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 My School | Contact: 9876543210</p>
+    </footer>
+
+</body>
+</html>
