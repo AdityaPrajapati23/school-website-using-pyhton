@@ -1,0 +1,7 @@
+Flask
+gunicorn
+pandas
+reportlab
+Pillow
+flask-mail
+razorpay
